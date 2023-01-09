@@ -1,0 +1,15 @@
+{
+  "name": "desafio-rating-movies",
+  "version": "1.0.0",
+  "description": "challenge practicing what I learnt about nodejs/back-end",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Lucas Silva Curvello Alves",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
