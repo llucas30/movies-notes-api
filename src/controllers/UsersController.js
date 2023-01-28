@@ -21,7 +21,7 @@ class UsersController {
   }
 
   async update(request, response) {
-    const { name, email } = request.body;
+    const { name, email, password, old_password } = request.body;
     const { id } = request.params;
 
     const database = await sqliteConnection();
@@ -39,6 +39,8 @@ class UsersController {
 
     user.name = name;
     user.email = email;
+
+    if( password && old)
 
     await database.run(`
     UPDATE users SET
